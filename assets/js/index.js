@@ -23,12 +23,12 @@ const renderAvatar = (user) => {
     // 按需渲染头像
     if (user.user_pic !== null) {
         //设置图片头像
-        $(".layui-nav-img").attr("src", user.user_pic).show();
+        $(".layui-nav-img").attr("src", user.user_pic)
         $(".text-avatar").hide();
     } else {
         //设置文本头像
         $(".layui-nav-img").hide()
-        $(".text-avatar").html(uname[0].toUpperCase()).show()
+        $(".text-avatar").html(uname[0].toUpperCase())
     }
 }
 
